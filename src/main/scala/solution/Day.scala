@@ -1,3 +1,5 @@
+package solution
+
 import java.io.PrintWriter
 import scala.io.Source
 
