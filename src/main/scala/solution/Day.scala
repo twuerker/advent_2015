@@ -25,14 +25,38 @@ class Day(day: Int) extends App {
       println(s"${formatted}${subProblem.formatted} = $output")
     }
 
-  }
+}
 
-  sealed trait SubProblem {
-    def formatted: String
+sealed trait SubProblem {
+  def formatted: String
+}
+case object A extends SubProblem {
+  override def formatted: String = "A"
+}
+case object B extends SubProblem {
+  override def formatted: String = "B"
+}
+
+/**
+
+  /**
+  * Problem A
+  * @param input
+  */
+  def problemA(input: String) = {
+
   }
-  case object A extends SubProblem {
-    override def formatted: String = "A"
+  val solutionA = problemA(input)
+  finalAnswer(solutionA.toString, A)
+
+  /**
+  * Problem B
+  * @param input
+  */
+  def problemB(input: String) = {
+
   }
-  case object B extends SubProblem {
-    override def formatted: String = "B"
-  }
+  val solutionB = problemB(input)
+  finalAnswer(solutionB.toString, B)
+
+  */
